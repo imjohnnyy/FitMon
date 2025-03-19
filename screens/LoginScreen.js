@@ -8,20 +8,20 @@ const LoginScreen = ({ navigation }) => {
   const [hidePassword, setHidePassword] = useState(true);
 
   return (
-    <View className="items-center justify-center flex-1 px-6 bg-gray-100">
+    <View className="items-center justify-center flex-1 px-6 bg-white">
       <View className="w-full max-w-md space-y-3">
         {/* Email Input */}
         <TextInput
-          placeholder="Email"
+          placeholder="Enter your email"
           value={email}
           onChangeText={setEmail}
-          className="h-12 px-4 bg-white border border-gray-300 rounded-lg"
+          className="h-12 px-4 bg-white border border-gray-500 rounded-lg"
         />
 
         {/* Password Input with Eye Toggle */}
-        <View className="flex-row items-center h-12 px-4 mt-4 bg-white border border-gray-300 rounded-lg">
+        <View className="flex-row items-center h-12 px-4 mt-4 bg-white border border-gray-500 rounded-lg">
           <TextInput
-            placeholder="Password"
+            placeholder="Enter your password"
             value={password}
             onChangeText={setPassword}
             secureTextEntry={hidePassword}
@@ -42,14 +42,14 @@ const LoginScreen = ({ navigation }) => {
         </TouchableOpacity>
 
         {/* Divider line*/}
-        <View className="flex flex-row items-center my-4">
-          <View className="flex-1 border-t border-gray-300"></View>
-          <Text className="mx-4 text-gray-500">Or</Text>
-          <View className="flex-1 border-t border-gray-300"></View>
+        <View className="flex flex-row items-center my-6">
+          <View className="flex-1 border-t border-gray-500"></View>
+          <Text className="mx-4 text-gray-500">OR</Text>
+          <View className="flex-1 border-t border-gray-500"></View>
         </View>
 
         {/* Sign in with Google Button */}
-        <TouchableOpacity className="flex flex-row items-center justify-center py-3 mt-4 bg-white border border-gray-300 rounded-lg">
+        <TouchableOpacity className="flex flex-row items-center justify-center py-3 mt-4 bg-white border border-gray-500 rounded-lg">
           <MaterialCommunityIcons name="google" size={24} color="#DB4437" />
           <Text className="ml-3 text-lg font-bold text-gray-700">
             Sign in with Google
